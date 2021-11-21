@@ -1,31 +1,25 @@
 # note
 
-## 查询网站
+## search
 
+### man
 
+```bash
+man man
+```
+
+## tools
+
+查壳：[Detect It Easy](https://github.com/horsicq/Detect-It-Easy)
 
 ## shellcode
 
 ### execve sh
 
-asm
-
-```asm
-push 6845231
-push 1852400175
-xor edx, edx
-xor ecx, ecx
-mov ebx, esp
-mov eax, 0xb
-int 0x80
-```
-
-python
-
 ```python
 asm_code = '''
-    push 6845231    /* 682f736800 */
-    push 1852400175
+    push 68732d    /* 682f736800 */
+    push 6e69622f
     xor edx, edx
     xor ecx, ecx
     mov ebx, esp
